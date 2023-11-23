@@ -99,6 +99,10 @@ class TestCalculator(unittest.TestCase):
         """Проверка недопустимых аргументов: %скидки 200"""
         self.assertRaises(ValueError, self.calculator.discount, 1200, 200)
 
+    def test_discount_bad_arguments(self):
+        """Проверка недопустимых аргументов"""
+        self.assertRaises(ValueError, self.calculator.discount, 0, 0)
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
