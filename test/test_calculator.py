@@ -92,7 +92,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calculator.discount(1250, 10), 1125)
 
     def test_discount_bad_sum(self):
-        """Проверка недопустимых аргументов: сумма покупки -150"""
+        """Проверка недопустимых аргументов: сумма покупки -1500"""
         self.assertRaises(ValueError, self.calculator.discount, -1500, 10)
 
     def test_discount_bad_discount_percent(self):
