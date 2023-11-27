@@ -69,3 +69,7 @@ class TestVehicle(unittest.TestCase):
         self.motorcycle.test_drive()
         self.motorcycle.park()
         self.assertEqual(self.motorcycle.speed, 0)
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
