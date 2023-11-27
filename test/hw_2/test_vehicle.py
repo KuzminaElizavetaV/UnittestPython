@@ -47,29 +47,25 @@ class TestVehicle(unittest.TestCase):
         self.assertEqual(self.motorcycle.num_wheels, 2)
 
     def test_drive_car(self):
-        """Тест скорости тестового вождения объекта Car"""
+        """Тест скорости объекта Car в режиме тестового вождения """
         self.assertEqual(self.car.speed, 0)
         self.car.test_drive()
         self.assertEqual(self.car.speed, 60)
 
     def test_drive_motorcycle(self):
-        """Тест скорости тестового вождения объекта Motorcycle"""
+        """Тест скорости объекта Motorcycle в режиме тестового вождения"""
         self.assertEqual(self.motorcycle.speed, 0)
         self.motorcycle.test_drive()
         self.assertEqual(self.motorcycle.speed, 75)
 
     def test_park_car(self):
-        """Тест остановки объекта Car в режиме парковки"""
+        """Тест скорости объекта Car в режиме парковки"""
         self.car.test_drive()
         self.car.park()
         self.assertEqual(self.car.speed, 0)
 
     def test_park_motorcycle(self):
-        """Тест остановки объекта Motorcycle в режиме парковки"""
+        """Тест скорости объекта Motorcycle в режиме парковки"""
         self.motorcycle.test_drive()
         self.motorcycle.park()
         self.assertEqual(self.motorcycle.speed, 0)
-
-
-if __name__ == '__main__':
-    unittest.main(verbosity=2)
