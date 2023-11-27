@@ -14,4 +14,4 @@ class Car(Vehicle):
         self._speed = 0
 
     def __str__(self):
-        return f'This car is a {self._year_release} year {self._company} {self._model}'
+        return f'{self._company} {self._model} {self._year_release} года'
