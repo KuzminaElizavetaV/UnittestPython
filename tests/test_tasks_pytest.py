@@ -1,10 +1,10 @@
 import pytest
 from contextlib import nullcontext as does_not_raise
 from hw_3.tasks import even_odd_number, number_in_interval
-"""Проверка"""
+"""РџСЂРѕРІРµСЂРєР°"""
 
 
-# Параметризованный тест проверки числа на четность-нечетность + ошибки
+# РџР°СЂР°РјРµС‚СЂРёР·РѕРІР°РЅРЅС‹Р№ С‚РµСЃС‚ РїСЂРѕРІРµСЂРєР° РЅР° С‡РµС‚РЅРѕСЃС‚СЊ-РЅРµС‡РµС‚РЅРѕСЃС‚СЊ + РѕС€РёР±РєРё
 @pytest.mark.parametrize(
     "number, result, expectation",
     [
@@ -26,7 +26,7 @@ def test_even_odd_number(number, result, expectation):
         assert even_odd_number(number) == result
 
 
-# Параметризованный тест проверки числа в диапазоне (25-100) и ошибки
+# РџР°СЂР°РјРµС‚СЂРёР·РѕРІР°РЅРЅС‹Р№ С‚РµСЃС‚ РїСЂРѕРІРµСЂРєРё С‡РёСЃРµР» РЅР° РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚СЊ Рє РёРЅС‚РµСЂРІР°Р»Сѓ (25-100) + РѕС€РёР±РєРё
 @pytest.mark.parametrize(
     "number, result, expectation",
     [

@@ -4,31 +4,31 @@ from hw_3.tasks import even_odd_number, number_in_interval
 
 class TestTasks(unittest.TestCase):
     def test_even_number(self):
-        # Проверка на четность
+        """РџСЂРѕРІРµСЂРєР° РЅР° С‡РµС‚РЅРѕСЃС‚СЊ"""
         self.assertTrue(even_odd_number(2))
 
     def test_odd_number(self):
-        # Проверка на нечетность
+        """РџСЂРѕРІРµСЂРєР° РЅР° РЅРµС‡РµС‚РЅРѕСЃС‚СЊ"""
         self.assertFalse(even_odd_number(27))
 
     def test_even_odd_number_bad_argument(self):
-        # Проверка на число"""
+        """РџСЂРѕРІРµСЂРєР° РЅР° С‡РёСЃР»Рѕ"""
         self.assertRaises(TypeError, even_odd_number, "6")
 
     def test_number_in_interval_less(self):
-        # Проверка маленького числа
+        """РџСЂРѕРІРµСЂРєР° РјР°Р»РµРЅСЊРєРѕРіРѕ С‡РёСЃР»Р°"""
         self.assertFalse(number_in_interval(-25))
 
     def test_number_in_interval_true(self):
-        # Проверка подходящего числа
+        """РџСЂРѕРІРµСЂРєР° РїРѕРґС…РѕРґСЏС‰РµРіРѕ С‡РёСЃР»Р°"""
         self.assertTrue(number_in_interval(55))
 
     def test_number_in_interval_more(self):
-        # Проверка слишком большого числа
+        """РџСЂРѕРІРµСЂРєР° Р±РѕР»СЊС€РѕРіРѕ С‡РёСЃР»Р°"""
         self.assertFalse(number_in_interval(158))
 
     def test_number_in_interval_bad_argument(self):
-        # Проверка на число
+        """РџСЂРѕРІРµСЂРєР° РЅР° С‡РёСЃР»Рѕ"""
         self.assertRaises(TypeError, even_odd_number, "*")
 
 
