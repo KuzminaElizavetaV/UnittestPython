@@ -1,6 +1,7 @@
 import pytest
 from contextlib import nullcontext as does_not_raise
 from hw_3.tasks import even_odd_number, number_in_interval
+"""Проверка"""
 
 
 # Параметризованный тест проверки числа на четность-нечетность + ошибки
