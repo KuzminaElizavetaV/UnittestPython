@@ -20,4 +20,4 @@
 ### Задание 2.
 
 У вас есть класс BookService, который использует интерфейс BookRepository для получения информации о книгах из базы данных. Ваша задача написать unit-тесты для BookService, используя Mockito для создания мок-объекта BookRepository.
-- Реализовано в [**tests/test_book_service.py**](/tests/test_book_service.py "Ссылка на файл")
+- Реализовано в [**tests/test_book_service.py**](/tests/test_book_service.py "Ссылка на тестовый модуль")
